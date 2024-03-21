@@ -1,4 +1,4 @@
-NAME = ScalarConverter
+NAME = Serializer
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -7,7 +7,7 @@ SRCS_DIR = srcs/
 INC_DIR = includes/
 
 SRCS =	$(SRCS_DIR)main.cpp				\
-		$(SRCS_DIR)ScalarConverter.cpp
+		$(SRCS_DIR)Serializer.cpp
 
 OBJS = $(patsubst $(SRCS_DIR)%.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 

@@ -1,4 +1,4 @@
-NAME = ScalarConverter
+NAME = RealType
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -6,8 +6,7 @@ OBJ_DIR = objs
 SRCS_DIR = srcs/
 INC_DIR = includes/
 
-SRCS =	$(SRCS_DIR)main.cpp				\
-		$(SRCS_DIR)ScalarConverter.cpp
+SRCS =	$(SRCS_DIR)Base.cpp
 
 OBJS = $(patsubst $(SRCS_DIR)%.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
